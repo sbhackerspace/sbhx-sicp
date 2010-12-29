@@ -10,17 +10,15 @@
 # #       (car items)
 # #       (list-ref (cdr items) (- n 1))))
 
+# # (define squares (list 1 4 9 16 25))
+# # (list-ref squares 3)
+# # 16
+
 def list_ref(items, n):
     if n == 0:
         return items[0]
     else:
         return list_ref(items[1:], n-1)
-
-
-### Original Lisp
-# # (define squares (list 1 4 9 16 25))
-# # (list-ref squares 3)
-# # 16
 
 squares = [1, 4, 9, 16, 25]
 #squares = [x**2 for x in [1, 2, 3, 4, 5] ]

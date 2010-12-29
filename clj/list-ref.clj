@@ -9,15 +9,14 @@
 ;;       (car items)
 ;;       (list-ref (cdr items) (- n 1))))
 
+;; (define squares (list 1 4 9 16 25))
+;; (list-ref squares 3)
+;; 16
+
 (defn list-ref [items n]
   (if (= n 0)
       (first items)
       (list-ref (rest items) (- n 1))))
-
-;;; Original Lisp
-;; (define squares (list 1 4 9 16 25))
-;; (list-ref squares 3)
-;; 16
 
 (def squares [1 4 9 16 25])
 ;; (def squares (for [num (range 1 6)]

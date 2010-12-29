@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-# Steve Phillips / fraktil
+# Steve Phillips / elimisteve
 # 2010.12.28
 
 # From http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-15.html
 
+### Original Lisp
 # # (define (length items)
 # #   (if (null? items)
 # #       0
