@@ -18,7 +18,7 @@
   (for [num items]
     (* num factor)))
 
-(println (scale-list [1 2 3 4 5] 10))
+(println (scale-list [1 2 3 4 5] 10))  ; (10 20 30 40 50)
 
 
 ;;;; Actual Exercise
@@ -33,7 +33,7 @@
     nil
     (cons (* (first items) (first items)) (square-list-cons (rest items)))))
 
-(println (square-list-cons (list 1 2 3 4)))
+(println (square-list-cons (list 1 2 3 4)))  ; (1 4 9 16)
 
 
 ;; (define (square-list items)
@@ -42,4 +42,4 @@
 (defn square-list-map [items]      
   (map (fn [x] (* x x)) items))
 
-(println (square-list-map (list 1 2 3 4)))
+(println (square-list-map (list 1 2 3 4)))  ; (1 4 9 16)
